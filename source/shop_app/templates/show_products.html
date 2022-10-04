@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content%}
+    {% for good in goods %}
+        <div class="row card">
+            <div style="margin-top: 20px">
+                <img src='{{good.photo}}' style="width: 180px">
+            </div>
+            <div class="wrapper">
+                <p class="text">Category - {{ good.category }}</p>
+                <p class="title">{{ good.title }}</h2>
+                <p class="text">Category - {{ good.category }}</p>
+                <p class="price">Price: {{ good.price }}$</p>
+                <p class="text"><a href="{% url 'page_show_good' good.pk %}">see more >>></a></p>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}

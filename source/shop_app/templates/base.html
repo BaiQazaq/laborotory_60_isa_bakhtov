@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title%}Products{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+<body>
+    
+    <div class="header">
+        <div>
+        <a href="{% url 'goods_page' %}" class="link">My market</a>
+        </div>
+        <div>
+        <a href="{% url 'goods_page' %}">Products</a>
+        <span> | </span>
+        <a href="{% url 'page_add_good' %}">Add Product</a>
+        <span> | </span>
+            {% block header %}{%endblock%}
+        </div>
+    </div>
+   
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+    <div>
+        {% block show_cat %}{% endblock%}
+    </div>
+</body>
+</html>
