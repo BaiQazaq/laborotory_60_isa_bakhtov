@@ -12,6 +12,8 @@
                 <p class="text">Category - {{ good.category }}</p>
                 <p class="price">Price: {{ good.price }}$</p>
                 <p class="text"><a href="{% url 'page_show_good' good.pk %}">see more >>></a></p>
+                <p><a href="{% url 'update_good' good.pk %}">Edit</a></p>
+                <p><a href="{% url 'delete_good' good.pk %}">Delete</a></p>
             </div>
         </div>
     {% endfor %}

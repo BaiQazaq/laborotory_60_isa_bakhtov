@@ -14,7 +14,8 @@ def product_add_view(request):
         'description': request.POST.get('description'),
         'price': request.POST.get('price'),
         'photo': request.POST.get('photo'),
-        'category': request.POST.get('category')
+        'category': request.POST.get('category'),
+        'balance': request.POST.get('balance')
     }
     good = Good.objects.create(**good_data)
     return redirect('page_show_good', pk=good.pk)
