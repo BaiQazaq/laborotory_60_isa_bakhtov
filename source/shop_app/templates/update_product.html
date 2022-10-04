@@ -1,52 +1,68 @@
 {% extends 'base.html' %}
 {% block title %}
-    Product create
+    Edit - {{ good.title }}
 {% endblock%}
 
 {% block show_cat %}
 <h1>Add poduct</h1>
     <form action="{% url 'page_add_good' %}" method="POST">
         {% csrf_token %}
-        <div class="form">
-            <div class="form_row">
-                <input id="title" name="title" type="text" placeholder="Title">
-            </div>
+        <div class="form_row">
+            {% if errors.title %}
+                <p class="error">{{ errors.title }}</p>
+            {% endif %}
+            <label for="title">Title: </label>
+            <input id="title" name="title" type="text" value="{{ good.title }}">
         </div>
 
         <div class="form">
             <div class="form_row">
-                <input id="price" name="price" type="number" placeholder="Price">
+            {% if errors.price %}
+                <p class="error">{{ errors.price }}</p>
+            {% endif %}
+            <label for="price">Price: </label>
+            <input id="price" name="price" type="number" value="{{ good.price }}">
             </div>
         </div>
         
         <div class="form">
             <div class="form_row">
-                <input id="photo" name="photo" type="text" placeholder="Image url">
+                <label for="photo">Photo: </label>
+                <input id="photo" name="photo" type="text" value="{{ good.photo }}">
             </div>
         </div>
         <div class="form">
             <div class="form_row">
-                <input id="balance" name="balance" type="number" placeholder="How many?">
+            {% if errors.balance %}
+                <p class="error">{{ errors.balance }}</p>
+            {% endif %}
+                <label for="balance">Balance: </label>
+                <input id="balance" name="balance" type="number" value="{{ good.balance }}">
             </div>
         </div>
 
         <div class="form">
             <div class="form_row">
+                <label for="category">Category: </label>
                 <select name="category">
-                    <option disabled selected>Category</option>
+                    <option disabled selected>{{ good.category }}</option>
                     {% for category in categories %}
-                        <option value={{ category.1 }}>{{ category.1 }}</option>
+                        {% if good.category == category.1 %}
+                            <option value={{ category.1 }} selected>{{ category.1 }}</option>
+                        {% else %}
+                            <option value="{{ category.1 }}">{{ category.1 }}</option>
+                        {% endif %}
                     {% endfor %}
                 </select>
             </div>
         </div>
 
         <div class="form_row">
-            <textarea name="description" id="description" cols="30" rows="10" placeholder="Description"></textarea>
+            <textarea name="description" id="description" cols="30" rows="10">{{ good.description }}</textarea>
         </div>
 
         <div class="from_row">
-            <button type="submit">Add product</button>
+            <button type="submit">Edit</button>
         </div>
     </div>
     </form>
