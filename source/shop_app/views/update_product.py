@@ -1,38 +1,17 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.views.generic import UpdateView
+from django.urls import reverse
+
 
 from shop_app.models import Good
+from shop_app.forms import GoodForm
 
 
-def update_view(request, pk):
-    errors = {}
-    good = get_object_or_404(Good, pk=pk)
-    if request.method == "POST":
-        if not request.POST.get('title'):
-            errors['title'] = 'Field is required'
-        if not request.POST.get('balance'):
-            errors['balance'] = 'Field is required'
-        if not request.POST.get('price'):
-            errors['price'] = 'Field is required'
-        good.title = request.POST.get('title')
-        good.description = request.POST.get('description')
-        good.photo =request.POST.get('photo')
-        good.category =request.POST.get('category')
-        good.balance = request.POST.get('balance')
-        good.price = request.POST.get('price')
-        if errors:
-            return render(
-        request,
-        'update_product.html',
-        context={
-            'good': good, 
-            'errors': errors
-            })
-        good.save()
-        return redirect('page_show_good', pk=good.pk)
-    return render(
-        request,
-        'update_product.html',
-        context={
-            'good': good, 
-            'errors': errors
-            })
+class GoodUpdateView(UpdateView):
+    template_name = 'update_product.html'
+    form_class = GoodForm
+    model = Good
+    pk_url_kwarg = 'pk'
+    context_object_name = 'good'
+    
+    def get_success_url(self):
+        return reverse('page_show_good', kwargs={'pk': self.object.pk})

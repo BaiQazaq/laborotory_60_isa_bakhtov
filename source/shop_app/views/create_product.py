@@ -1,23 +1,16 @@
-from django.shortcuts import render, redirect
+from django.views.generic import CreateView
+from django.urls import reverse
+
 from shop_app.models import Good
+from shop_app.forms import GoodForm
 
 
-def product_add_view(request):
-    if request.method == "GET":
-        context = {
-            'categories': Good.CATEGORIES_VAR
-        }
-        return render(request, 'create_product.html', context)
-    print("++++"*5, request.POST.get('category'))
-    good_data = {
-        'title': request.POST.get('title'),
-        'description': request.POST.get('description'),
-        'price': request.POST.get('price'),
-        'photo': request.POST.get('photo'),
-        'category': request.POST.get('category'),
-        'balance': request.POST.get('balance')
-    }
-    good = Good.objects.create(**good_data)
-    return redirect('page_show_good', pk=good.pk)
 
-
+class GoodCreate(CreateView):
+    template_name = 'create_product.html'
+    form_class = GoodForm
+    model = Good
+    context_object_name = 'good'
+    
+    def get_success_url(self):
+        return reverse('page_show_good', kwargs={'pk': self.object.pk})

@@ -1,9 +1,15 @@
 from django.shortcuts import render
 from shop_app.models import Good
+from django.views.generic import ListView
 
-def products_view(request):
-    goods = Good.objects.all()
-    context = {
-        "goods": goods
-    }
-    return render(request, 'show_products.html', context)
+
+class IndexView(ListView):
+    template_name = 'show_products.html'
+    model = Good
+    context_object_name = 'goods'
+    ordering = ('-created_at',)
+    # extra_context = {'aaa': 'bbb'}
+    #queryset = Article.objects.exclude(status=StatusChoices.NOT_ACTIVE)
+    paginate_by = 4
+    paginate_orphans = 1
+
