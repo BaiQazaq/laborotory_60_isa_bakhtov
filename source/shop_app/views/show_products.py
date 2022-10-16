@@ -9,7 +9,7 @@ class IndexView(ListView):
     context_object_name = 'goods'
     ordering = ('-created_at',)
     # extra_context = {'aaa': 'bbb'}
-    #queryset = Article.objects.exclude(status=StatusChoices.NOT_ACTIVE)
+    queryset = Good.objects.exclude(is_deleted=True)
     paginate_by = 4
     paginate_orphans = 1
 

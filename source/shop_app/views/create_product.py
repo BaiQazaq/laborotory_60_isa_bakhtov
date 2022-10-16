@@ -5,7 +5,6 @@ from shop_app.models import Good
 from shop_app.forms import GoodForm
 
 
-
 class GoodCreate(CreateView):
     template_name = 'create_product.html'
     form_class = GoodForm
