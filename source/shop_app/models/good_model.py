@@ -21,8 +21,8 @@ class Good(models.Model):
     price = models.DecimalField(verbose_name='Price', max_digits=7, decimal_places=2, null=False, blank=False)
     created_at = models.DateTimeField(verbose_name='Date of creation', auto_now_add=True)
     changed_at = models.DateTimeField(verbose_name='Date of change', auto_now=True)
-    is_deleted = models.BooleanField(verbose_name="Удалено", default=False, null=False)
-    deleted_at = models.DateTimeField(verbose_name='Дата удаления', null=True, default=None)
+    is_deleted = models.BooleanField(verbose_name="Deleted", default=False, null=False)
+    deleted_at = models.DateTimeField(verbose_name='Date of delete', null=True, default=None)
     
 
     def __str__(self):

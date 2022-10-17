@@ -1,2 +1,2 @@
 from .good_model import Good
-#from good_in_cart import Cart
+from .cart_model import Cart
