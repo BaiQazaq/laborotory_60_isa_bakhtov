@@ -1,5 +1,10 @@
 {% extends 'base.html' %}
 
+{% block search %}
+<div>
+    {% include 'partial/search.html' %}
+</div>
+{% endblock %}
 {% block content%}
     {% for good in goods %}
         <div class="row card">
@@ -17,4 +22,7 @@
             </div>
         </div>
     {% endfor %}
+    {% if is_paginated %}
+        {% include 'partial/pagination.html' %}
+    {% endif%}
 {% endblock %}

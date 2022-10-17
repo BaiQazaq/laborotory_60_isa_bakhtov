@@ -1,0 +1,472 @@
+[
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add good",
+    "content_type": 7,
+    "codename": "add_good"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change good",
+    "content_type": 7,
+    "codename": "change_good"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete good",
+    "content_type": 7,
+    "codename": "delete_good"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view good",
+    "content_type": 7,
+    "codename": "view_good"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$KK6X9b5Uf5NkWJc5HwRrXP$TTe84suNC+GtpVVIXzNasYUzYVGCv5pBZ9Zs883aUsw=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-10-04T09:09:04.692Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "shop_app",
+    "model": "good"
+  }
+},
+{
+  "model": "shop_app.good",
+  "pk": 1,
+  "fields": {
+    "title": "Xiaomi 12",
+    "description": "Brand new, global version",
+    "photo": "https://xiaomi-store.kz/templates/yootheme/cache/Xiaomi-12-Lite-29f94c35.jpeg",
+    "category": "Phones",
+    "balance": 11,
+    "price": "300.00",
+    "created_at": "2022-10-04T09:24:07.859Z",
+    "changed_at": "2022-10-16T16:07:20.659Z",
+    "is_deleted": true,
+    "deleted_at": "2022-10-16T16:07:20.659Z"
+  }
+},
+{
+  "model": "shop_app.good",
+  "pk": 2,
+  "fields": {
+    "title": "Sumsung",
+    "description": "Brand new, blocked",
+    "photo": "https://images.samsung.com/is/image/samsung/p6pim/kz_ru/2202/gallery/kz-ru-galaxy-a53-5g-a536-sm-a536elbdskz-531268964?$650_519_PNG$",
+    "category": "Phones",
+    "balance": 0,
+    "price": "100.00",
+    "created_at": "2022-10-04T09:26:04.265Z",
+    "changed_at": "2022-10-16T18:28:26.744Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "shop_app.good",
+  "pk": 3,
+  "fields": {
+    "title": "Samsung batterry",
+    "description": "mini Original Battery - EB-BG800BBE - 3.7V - Li-Ion - 2100mAh ",
+    "photo": "data:image/jpeg;base64,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",
+    "category": "Accumulators",
+    "balance": 5,
+    "price": "100.00",
+    "created_at": "2022-10-04T09:27:56.779Z",
+    "changed_at": "2022-10-16T13:26:30.920Z",
+    "is_deleted": true,
+    "deleted_at": "2022-10-16T13:26:30.919Z"
+  }
+},
+{
+  "model": "shop_app.good",
+  "pk": 4,
+  "fields": {
+    "title": "Cabel",
+    "description": "Fast charge available",
+    "photo": "https://img.joomcdn.net/f3c16f8cea72b5deafa779793712af4b8fa31677_original.jpeg",
+    "category": "Others",
+    "balance": 6,
+    "price": "45.00",
+    "created_at": "2022-10-16T15:40:14.965Z",
+    "changed_at": "2022-10-16T15:43:47.111Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "shop_app.good",
+  "pk": 5,
+  "fields": {
+    "title": "Xiaomi",
+    "description": "Brand new. Global",
+    "photo": "https://cdn.ksyru0-fusion.fds.api.mi-img.com/b2c-mishop-pms-ru/pms_1650627267.99391434.png",
+    "category": "Phones",
+    "balance": 3,
+    "price": "320.00",
+    "created_at": "2022-10-16T18:41:54.692Z",
+    "changed_at": "2022-10-16T18:41:54.692Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "shop_app.good",
+  "pk": 6,
+  "fields": {
+    "title": "Charger Xiaomi",
+    "description": "Fast charger 67W",
+    "photo": "https://www.dealbates.com/timthumb.php?src=https://www.dealbates.com/uploads/1628760753717.jpg&w=600&h=430&zc=2",
+    "category": "Others",
+    "balance": 20,
+    "price": "150.00",
+    "created_at": "2022-10-16T18:43:35.432Z",
+    "changed_at": "2022-10-16T18:43:35.432Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "shop_app.good",
+  "pk": 7,
+  "fields": {
+    "title": "Asus nootebook 14",
+    "description": "Asus X415EA-BV744 14.0HD Intel® Pentium® Gold 7505/8Gb/SSD 256Gb/Intel® UHD Graphics/Slate Grey(90NB0TT1-M10140)",
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS8IFNrmVSbSw2tk3DClINV43L6gGRF1kdxVA1VPJHp36WtSPNuyFrxiY8ECM6e0LOLS8&usqp=CAU",
+    "category": "Notebooks",
+    "balance": 5,
+    "price": "800.00",
+    "created_at": "2022-10-16T18:46:23.248Z",
+    "changed_at": "2022-10-16T18:50:45.139Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "shop_app.good",
+  "pk": 8,
+  "fields": {
+    "title": "Battery for LG",
+    "description": "For LG BL-42D1F LG G5 VS987 US992 H820 H850 H868 H860 F700K 2800mAh BL 42D1F Lithium Mobile Phone replacment battery",
+    "photo": "https://ae01.alicdn.com/kf/HTB18FfNSNjaK1RjSZKzq6xVwXXa9/For-LG-BL-42D1F-LG-G5-VS987-US992-H820-H850-H868-H860-F700K-2800mAh-BL-42D1F.jpg_Q90.jpg_.webp",
+    "category": "Accumulators",
+    "balance": 2,
+    "price": "100.00",
+    "created_at": "2022-10-16T18:48:42.846Z",
+    "changed_at": "2022-10-16T18:48:42.846Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "shop_app.good",
+  "pk": 9,
+  "fields": {
+    "title": "Sony",
+    "description": "KICKmobiles®\r\nSony Xperia Z5 Premium, 32GB, 4G, Black, BRAND NEW, Chrome, E6853, FACTORY UNLOCKED, Gold, SINGLE SIM, Sony Xperia Z5 Premium, Sony Xperia Z5 Premium E6853 32GB (Gold) | KICKmobiles®",
+    "photo": "https://www.kickmobiles.com/images/thumbs/0032277_sony-xperia-z5-premium_808.jpeg",
+    "category": "Phones",
+    "balance": 3,
+    "price": "780.00",
+    "created_at": "2022-10-16T18:50:29.140Z",
+    "changed_at": "2022-10-16T18:50:29.140Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+}
+]
